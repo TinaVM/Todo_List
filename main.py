@@ -6,9 +6,12 @@ app = Flask('index.html')
 #defining the basic route "/" and its corresponding request handler
 @app.route("/")
 def main():
-    return "Welcome!"
+    return render_template('index.html')
 #checking if the executed file is the main program and running the app
 if __name__ == "__main__":
     app.run()
+
+
+
 
 
